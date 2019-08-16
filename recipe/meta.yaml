@@ -10,7 +10,7 @@ source:
   sha256: 86c453d827b8d6c3574ec306f6fadfc5028614e1cd46676841336e6787a7496a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
@@ -24,6 +24,7 @@ requirements:
     - python >=3
     - scipy >=0.13.0
     - matplotlib
+    - ipython >=7.7
 
 test:
   imports:
