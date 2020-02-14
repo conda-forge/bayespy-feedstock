@@ -10,7 +10,7 @@ source:
   sha256: 24e1327ce241a0113abf217fbaf41ac25e04f5a01f9ed606610f2f1f2d82d34f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
@@ -23,7 +23,7 @@ requirements:
     - numpy >=1.10.0
     - python >=3
     - scipy >=0.13.0
-    - matplotlib
+    - matplotlib-base
     - ipython >=7.7
 
 test:
