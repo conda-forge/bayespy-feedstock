@@ -24,7 +24,6 @@ requirements:
     - python >=3
     - scipy >=0.13.0
     - matplotlib-base
-    - ipython >=7.7
 
 test:
   imports:
