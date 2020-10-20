@@ -5,7 +5,7 @@ Home: http://bayespy.org
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Variational Bayesian inference tools for Python
 

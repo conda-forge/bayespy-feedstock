@@ -1,18 +1,18 @@
 {% set name = "bayespy" %}
-{% set version = "0.5.19" %}
+{% set version = "0.5.20" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 24e1327ce241a0113abf217fbaf41ac25e04f5a01f9ed606610f2f1f2d82d34f
+  sha256: 8c16cdc73bbcd9a1124a0495056065b7ce938dbe6c2c780dc330c83fb4d2640a
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
@@ -24,7 +24,6 @@ requirements:
     - python >=3
     - scipy >=0.13.0
     - matplotlib-base
-    - ipython >=7.7
 
 test:
   imports:
