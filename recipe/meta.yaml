@@ -1,5 +1,5 @@
 {% set name = "bayespy" %}
-{% set version = "0.5.25" %}
+{% set version = "0.5.26" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a837478266a6b085eb5ff331d006f168ccbd9aaa4c571b9da8e9c938ad725b6d
+  sha256: 34ebeea8f2a2a1122a49c7768c2ee76a4a270c4a2f4e8f6a2a9fee4e4f73d411
 
 build:
   number: 0
